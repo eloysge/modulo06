@@ -72,6 +72,10 @@ export default class Main extends Component {
 
   handleAddUser = async () => {
     const { users, newUser } = this.state;
+    if (newUser.length === 0) {
+      return;
+    }
+
     if (users.find(user => user.login === newUser)) {
       return;
     }
