@@ -26,6 +26,6 @@ export default class MyWeb extends Component {
   render() {
     const { navigation } = this.props;
     const item = navigation.getParam('item');
-    return <WebView source={{ uri: item.html_url }} style={{ marginTop: 5 }} />;
+    return <WebView source={{ uri: item.html_url }} style={{ marginTop: 1 }} />;
   }
 }
